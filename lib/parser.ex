@@ -1,6 +1,8 @@
 defmodule Parser do
   def parse(file) do
-    Enum.map(IO.stream(file, :line), &Enum.into(resolve(&1), Map.new))
+    file
+    |> IO.stream(:line)
+    |> Enum.map(&Enum.into(resolve(&1), Map.new))
     |> Enum.map(&convert_duration_to_integer(&1))
   end
 
