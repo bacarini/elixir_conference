@@ -1,19 +1,20 @@
 # ElixirConference
 
-**TODO: Add description**
+Conference Track Management
 
-## Installation
+This system helps to manage the time constraints of conferences by automatically fitting the talks into the tracks according to the duration of with session of the day. With that, it is possible to easily create a line up that will always use time in an efficient way, preveting delays.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
 
-  1. Add elixir_conference to your list of dependencies in `mix.exs`:
+Run:
+----
+The system only includes input from files. To execute run the command below.
 
-        def deps do
-          [{:elixir_conference, "~> 0.0.1"}]
-        end
+```
+./elixir_conference input.txt
+```
 
-  2. Ensure elixir_conference is started before your application:
-
-        def application do
-          [applications: [:elixir_conference]]
-        end
+Test:
+-----
+```
+mix test
+```
